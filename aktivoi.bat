@@ -1,0 +1,1 @@
+powershell -Command "& {(Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey}"| clip

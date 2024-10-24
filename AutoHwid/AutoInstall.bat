@@ -1,0 +1,1 @@
+( echo y& echo y& echo y ) | powershell -Command "& {Install-Script -Name Get-WindowsAutoPilotInfo}"
