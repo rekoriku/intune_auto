@@ -1,9 +1,6 @@
 function AutopilottiInformaatio {
     $name = "AutopilotHWID"
     Get-WindowsAutopilotInfo -OutputFile "D:\$($name).csv" #-Append
-    
-    # If running in the console, wait for input before closing.   
-    #Get-WindowsAutopilotInfo -OutputFile "D:\AutopilotHwid.csv" -Append
 }
 
 function PressAnyKey($message) {
@@ -25,6 +22,6 @@ catch {
     AutopilottiInformaatio
     <#Do this if a terminating exception happens#>
 }
-finally{
+finally {
     PressAnyKey('Press any key to close window...')
 }
