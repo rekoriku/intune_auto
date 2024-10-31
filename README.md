@@ -1,3 +1,3 @@
 # intune_auto
  
-Get serial and hash to use in intune
+Save serial and hash to usb for use in intune
