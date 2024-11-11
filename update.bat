@@ -10,3 +10,4 @@ Call PowerShell -NoProfile -ExecutionPolicy Bypass -Command "wget -O %HWID%scrip
 Call PowerShell -NoProfile -ExecutionPolicy Bypass -Command "wget -O %HWID%AutoInstall.bat https://raw.githubusercontent.com/rekoriku/intune_auto/refs/heads/main/AutoHwid/AutoInstall.bat;
 Call PowerShell -NoProfile -ExecutionPolicy Bypass -Command "wget -O %Dir%AUTO.bat https://raw.githubusercontent.com/rekoriku/intune_auto/refs/heads/main/AUTO.bat;
 Call PowerShell -NoProfile -ExecutionPolicy Bypass -Command "wget -O %Dir%aktivoi.bat https://raw.githubusercontent.com/rekoriku/intune_auto/refs/heads/main/aktivoi.bat;
+Call PowerShell -NoProfile -ExecutionPolicy Bypass -Command "wget -O %Dir%update.bat https://raw.githubusercontent.com/rekoriku/intune_auto/refs/heads/main/update.bat;
