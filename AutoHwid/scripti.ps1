@@ -11,8 +11,6 @@ function PressAnyKey($message) {
     }
 }
 
-
-
 try {
     throw
     AutopilottiInformaatio
@@ -21,9 +19,8 @@ try {
 }
 catch {
     Write-Host "Script failed, trying again"
-    Start-Sleep -Seconds 1.0
-    Start-Process -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File failure.ps1"
-
+    Start-Sleep -Seconds 5.0
+    AutopilottiInformaatio
     <#Do this if a terminating exception happens#>
 }
 finally {
