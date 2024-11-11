@@ -12,14 +12,20 @@ function PressAnyKey($message) {
 }
 
 try {
+    Write-Host "Script succeeded"
     AutopilottiInformaatio
     #PressAnyKey('Press any key to run script.')
 }
 catch {
     Write-Host "Script failed, trying again"
     Start-Sleep -Seconds 5.0
-    AutopilottiInformaatio
-    <#Do this if a terminating exception happens#>
+    try {
+        Write-Host "Script succeeded"
+        AutopilottiInformaatio
+    }
+    catch {
+        Write-Host "Script failed again, try starting the script again"
+    }
 }
 finally {
     PressAnyKey('Press any key to close window...')
