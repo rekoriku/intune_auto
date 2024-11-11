@@ -12,9 +12,7 @@ function PressAnyKey($message) {
 }
 
 try {
-    throw
     AutopilottiInformaatio
-    
     #PressAnyKey('Press any key to run script.')
 }
 catch {
