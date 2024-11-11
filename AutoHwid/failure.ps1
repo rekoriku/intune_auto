@@ -14,15 +14,13 @@ function PressAnyKey($message) {
 
 
 try {
-    throw
     AutopilottiInformaatio
     
     #PressAnyKey('Press any key to run script.')
 }
 catch {
-    Write-Host "Script failed, trying again"
+    Write-Host "Script failed again"
     Start-Sleep -Seconds 1.0
-    Start-Process -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File failure.ps1"
 
     <#Do this if a terminating exception happens#>
 }
