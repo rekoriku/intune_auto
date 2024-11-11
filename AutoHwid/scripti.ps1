@@ -24,7 +24,7 @@ catch {
         AutopilottiInformaatio
     }
     catch {
-        Write-Host "Script failed again, try starting the script again"
+        Write-Host "Script failed again, try running AUTO.bat again"
     }
 }
 finally {
