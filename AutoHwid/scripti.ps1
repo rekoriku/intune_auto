@@ -1,6 +1,6 @@
 function AutopilottiInformaatio {
     $name = "AutopilotHWID"
-    Get-WindowsAutopilotInfo -OutputFile "D:\$($name).csv" #-Append
+    Get-WindowsAutopilotInfo -OutputFile "D:\$($name).csv"
 }
 
 function PressAnyKey($message) {
@@ -11,22 +11,6 @@ function PressAnyKey($message) {
     }
 }
 
-try {
-    Write-Host "Script succeeded"
     AutopilottiInformaatio
-    #PressAnyKey('Press any key to run script.')
-}
-catch {
-    Write-Host "Script failed, trying again"
-    Start-Sleep -Seconds 5.0
-    try {
-        Write-Host "Script succeeded"
-        AutopilottiInformaatio
-    }
-    catch {
-        Write-Host "Script failed again, try running AUTO.bat again"
-    }
-}
-finally {
+    Write-Host "run AUTO.bat again if csv gathering failed."
     PressAnyKey('Press any key to close window...')
-}
