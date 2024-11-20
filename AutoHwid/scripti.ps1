@@ -1,6 +1,6 @@
 function AutopilottiInformaatio {
     $name = "AutopilotHWID"
-    Get-WindowsAutopilotInfo -OutputFile "D:\$($name).csv"
+    Get-WindowsAutopilotInfo -OutputFile "D:\$($name).csv" -append
 }
 
 function PressAnyKey($message) {
